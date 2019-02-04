@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 dev_name = input('Enter device name:\n')
-
+# создаем список
 london_co = {
     'r1': {
         'location': '21 New Globe Walk',
@@ -27,5 +27,5 @@ london_co = {
         'routing': True
     }
 }
-
+# вытаскиваем из списка под список
 print(london_co[dev_name])
