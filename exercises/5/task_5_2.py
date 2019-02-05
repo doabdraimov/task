@@ -28,4 +28,8 @@ london_co = {
     }
 }
 # вытаскиваем из списка под список
+<<<<<<< HEAD
 print(london_co[dev_name])
+=======
+print(london_co[dev_name])
+>>>>>>> b521a51ed9031c3e274dec75979b55088dd059d1
