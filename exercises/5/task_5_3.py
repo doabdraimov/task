@@ -15,13 +15,15 @@ trunk_template = [
     'switchport trunk encapsulation dot1q', 'switchport mode trunk',
     'switchport trunk allowed vlan {}'
 ]
+# создаю пустой словарь 
 a={} 
-
+# записываю в словарь данные из темплейтов
 a['access']=access_template
 a['trunk']=trunk_template
-
+#вытаскиваю из словоря access или trunk(что вводил пользователь) и пишем в перенеую b 
 b=list(a[int_mode]) 
-
+# это просто линия 
 print('\n' + '-' * 30)
 print('interface', int_type)
+# форматирую b  и распечатываю 
 print('\n'.join(b).format(vlans))
