@@ -28,9 +28,8 @@ london_co = {
 
 dev_name = input('Enter device name:\n')
 a=list(london_co[dev_name].keys())
-param_name = input('Enter parameter name',a,'\n')
- 
 
+print('Enter parameter name',a,':')
 
-
+param_name=input()
 print(london_co[dev_name][param_name])
